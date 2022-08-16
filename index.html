@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie-Consent-Demo</title>
+
+    <!-- import the css-->
+    <link rel="stylesheet" type="text/css" href="cookies.css">
+</head>
+
+<body>
+    <div class="overlayCookie">
+        <div class="modalCookie">
+            <h1>Cookie-Consent-Title</h1>
+            <p>Again this demo only shows the technical aspects. Unfortunately, you will have to deal with the law
+                aspect yourself. &#128543; </p>
+            <p>Cookie-Consent-Text with link to <a href="privacypolicy.html">privacypolicy</a> and <a
+                    href="privacypolicy.html">impressum</a></p>
+            <input type="checkbox" id="cbCookies">
+            <!-- It is important for the law to atually check a box and not just lead the user to press a button by design-->
+            <label for="cbCookies"> Yes, I have read and accept the <a href="privacypolicy.html">privacypolicy</a> as
+                well as cookies </label>
+            <button onclick="acceptCookies()">Accept</button>
+        </div>
+    </div>
+    <!-- This example page should not be interactive until the user has given consent to cookies/privacy-->
+    <h1>Example page</h1>
+    <p> This page is greyed out in the background and should not be able to be used as long as the cookies are not
+        accepted. </p>
+    <a href="https://github.com">Try to click me!</a>
+
+    <!-- Import jQuery script-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- import the js-->
+    <script src="cookies.js">cookieConsent()</script>
+
+</body>
+
+</html>

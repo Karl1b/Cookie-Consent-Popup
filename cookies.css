@@ -1,0 +1,20 @@
+.overlayCookie {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(69, 69, 69, 0.75);
+    /* For inverted behaviour include the line below */
+    /* display: none; */
+}
+
+.modalCookie {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+}
